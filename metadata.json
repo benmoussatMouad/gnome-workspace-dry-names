@@ -1,0 +1,13 @@
+{
+    "name" : "Worksapce Dry Names",
+    "description" : "Extension that shows randomly generated names for workspaces that could be changed as well",
+    "settings-schema": "org.gnome.shell.extensions.workspace-dry-names",
+    "shell-version" : [
+        "3.38",
+    "40",
+    "41"
+    ],
+    "url" : "",
+    "uuid" : "workspace-dry-names@benmoussatmouad.github.io",
+    "version" : 1.0
+}

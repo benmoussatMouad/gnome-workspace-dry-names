@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="workspace-dry-names">
+  <enum id="org.gnome.shell.extensions.workspace-dry-names.names-options">
+    <value value="0" nick="cities"/>
+    <value value="1" nick="countries"/>
+    <value value="2" nick="films"/>
+    <value value="3" nick="boy_names"/>
+    <value value="4" nick="girl_names"/>
+    <value value="5" nick="objects"/>
+    <value value="6" nick="funnyWords"/>
+
+  </enum>
+  <schema id="org.gnome.shell.extensions.workspace-dry-names" path="/org/gnome/shell/extensions/workspace-dry-names/">
+    <key name="name-option" enum="org.gnome.shell.extensions.workspace-dry-names.names-options">
+      <default>'cities'</default>
+      <summary>Choose the category of names to be generated for your workspaces.</summary>
+    </key>
+    <key name="skip-taskbar-mode" type="b">
+      <default>true</default>
+      <summary>Ignore Taskbar-Skipped Windows.</summary>
+      <description>
+        Set to true to ignore `is_skip_taskbar` windows when determining in-use workspaces. This includes hidden windows created by the desktop-icons-ng extension.
+      </description>
+    </key>
+  </schema>
+</schemalist>
